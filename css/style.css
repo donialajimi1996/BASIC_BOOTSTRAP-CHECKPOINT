@@ -1,23 +1,9 @@
 body {
   display: block;
-}
-body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.4;
-  
+  line-height: 1.4; 
   background-color: #fff;
-}
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.content {
-  
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
 }
 .cover {
   background-image: url("../res/") center ;
@@ -26,10 +12,17 @@ body {
   background-color: #eee;
   background-size: cover;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-
-
 }
-
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content { 
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
 .MyPicture {
   position: relative;
   top: -100px;
@@ -39,12 +32,6 @@ body {
   border-radius: 30%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-h3 {
-  font-size: 2em;
-  color: darkred;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .social {
   color: darkred;
   position: relative;
@@ -57,20 +44,17 @@ h3 {
     padding: 20px;
     font-size: 2em;
   }
-
-i:hover {
+.fab:hover{
   color: #666;
 }
-
 .name {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     font-weight: bold;
     text-align: center;
     position: relative;
     top: -40px;
- 
-  color: darkslategray;
+    color: darkslategray;
 }
 .Sname {
   color: #666;
@@ -80,8 +64,37 @@ i:hover {
   top: -55px;
   text-transform: lowercase;
 }
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+h3 {
+  font-size: 2em;
+  color: darkred;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p , li{
+  color : black;
+}
 
-
+.Interests .row {
+  margin-top: 60px;
+}
+.fas,.far {
+  border-radius: 50%;
+ -webkit-transition: -webkit-transform .5s ease-in-out;
+ transition:transform .5s ease-in-out;
+}
+.fas:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+          color: darkred;
+}
+.far:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+          color: darkred;
+}
 .fas,.far {
   padding-left: 50px;
   padding-right: 50px;
@@ -89,34 +102,25 @@ i:hover {
   display: inline-block;
   text-align: center
 }
-p , li{
-  color : black;
-}
- 
+.show {
+  opacity: 0;
+  text-align: center;
+  font-size: 1.1em;
+ }
+ .far:hover ~ .show{
+   color: darkred;
+   opacity: 1;
+
+ }
+ .fas:hover ~ .show{
+   color: darkred;
+   opacity: 1;
+ }
 p {
-  
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.Interests p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.2em;
-  color: darkgoldenrod;
-  position: relative;
-  left:-30px;
-  opacity: 0;}
-  
-.Interests .row {
-  margin-top: 60px;
-}
-
-
 
